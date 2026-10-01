@@ -3,7 +3,7 @@ name: digitalme
 description: >-
   把讲稿/文稿/大纲生成为 AI 数字人录播课视频（数字人讲解 + 声音克隆配音 + 自动课件 + 成片合成，全程 3 个人工审阅点）。
   当用户要求"把这份文稿/课程做成视频""生成数字人课程/录播课""做一节视频课""讲稿转视频"，或需要查询、继续、审阅、取消
-  digitalme 平台上已有的课程生成任务时使用。依赖 dm 命令行（npx digitalme）。
+  digitalme 平台上已有的课程生成任务时使用。依赖 dm 命令行（npx digitalme-cli）。
 ---
 
 # digitalme：AI 数字人课程生成
@@ -15,7 +15,7 @@ description: >-
 运行 `dm me`：
 - 正常返回用户与积分 → 就绪
 - 退出码 2 / 提示未配置 → 指导用户：打开 https://digitalme.com.cn 注册登录 → 「设置」页签发 API Token → 执行
-  `npx digitalme login --url https://digitalme.com.cn --token <dmt_开头的令牌>`，然后重试
+  `npx digitalme-cli login --url https://digitalme.com.cn --token <dmt_开头的令牌>`，然后重试
 - 503 / 网络错误 → 平台冷启动（首次访问从 0 拉起约 1 分钟），等 15 秒重试一次即可，不必报告为故障
 
 ## 第二步：备素材（优先复用，避免重传）

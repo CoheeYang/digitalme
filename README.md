@@ -57,15 +57,15 @@ npx skills add CoheeYang/digitalme
 | OpenCode | 复制 `skills/digitalme/` 到 `~/.opencode/skills/` |
 | Cursor | 复制 `skills/digitalme/` 到 `~/.cursor/skills/` |
 | Kiro | 复制 `skills/digitalme/` 到 `~/.kiro/skills/` |
-| 其他任意框架 | `npx digitalme skill install --dir <你的 skills 目录>`；或直接把本仓库的 [SKILL.md](skills/digitalme/SKILL.md) 内容贴进你的助手对话框，一样能用 |
+| 其他任意框架 | `npx digitalme-cli skill install --dir <你的 skills 目录>`；或直接把本仓库的 [SKILL.md](skills/digitalme/SKILL.md) 内容贴进你的助手对话框，一样能用 |
 
 </details>
 
 ### 方式三：直接用命令行
 
 ```bash
-npm i -g digitalme          # 或每次 npx digitalme
-npx digitalme login --url https://digitalme.com.cn --token <dmt_令牌>   # 令牌在官网「设置」页签发
+npm i -g digitalme-cli          # 或每次 npx digitalme-cli
+npx digitalme-cli login --url https://digitalme.com.cn --token <dmt_令牌>   # 令牌在官网「设置」页签发
 ```
 
 ```bash
@@ -109,7 +109,7 @@ dm run auto <runId> --approve-all --out 课程.mp4 # 获用户授权后：自动
 
 **digitalme** turns scripts, documents, or outlines into complete **AI-avatar course videos** — a digital human presenter (lip-synced to your photo), voice cloning from a 15-second sample, auto-generated slide deck, and a 1080p final MP4. Three human review checkpoints (script → slides → final cut) keep you in control.
 
-Full automation is available through the `dm` CLI (`npm i -g digitalme`) and a ready-made agent skill (`npx skills add CoheeYang/digitalme`) for Claude Code, Codex, Cursor, OpenCode and 20+ other agents: upload/reuse assets, generate the script from materials, approve reviews, and download the final video — all from your AI assistant.
+Full automation is available through the `dm` CLI (`npm i -g digitalme-cli`) and a ready-made agent skill (`npx skills add CoheeYang/digitalme`) for Claude Code, Codex, Cursor, OpenCode and 20+ other agents: upload/reuse assets, generate the script from materials, approve reviews, and download the final video — all from your AI assistant.
 
 Service: [digitalme.com.cn](https://digitalme.com.cn) (credit-based billing, free daily allowance, quote before any charge, auto-refund on failure).
 
