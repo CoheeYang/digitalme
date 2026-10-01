@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="docs-banner.png" alt="digitalme · AI 数字人录播课生成" width="880">
+
 # digitalme
 
 ### AI 数字人录播课生成 · 讲稿一键变视频课程
